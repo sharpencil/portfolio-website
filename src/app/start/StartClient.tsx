@@ -73,7 +73,7 @@ export default function StartClient() {
                                 <Mail className="w-6 h-6 text-authority-navy shrink-0 mt-1" />
                                 <div>
                                     <p className="text-sm font-bold uppercase tracking-wide text-authority-navy/60 mb-1">Direct Email</p>
-                                    <a href="mailto:young@protoux.com" className="text-xl font-medium text-authority-navy hover:text-electric-cyan transition-colors">young@protoux.com</a>
+                                    <a href="mailto:sharpencil@gmail.com" className="text-xl font-medium text-authority-navy hover:text-electric-cyan transition-colors">sharpencil@gmail.com</a>
                                 </div>
                             </div>
 

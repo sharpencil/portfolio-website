@@ -54,9 +54,9 @@ export default function Footer() {
                             </li>
 
                             <li>
-                                <a href="mailto:hello@protoux.com" className="flex items-center text-sm font-medium text-authority-navy hover:text-electric-cyan transition-colors group">
+                                <a href="mailto:sharpencil@gmail.com" className="flex items-center text-sm font-medium text-authority-navy hover:text-electric-cyan transition-colors group">
                                     <Mail className="w-4 h-4 mr-3 text-authority-navy/40 group-hover:text-electric-cyan transition-colors" />
-                                    young@protoux.com
+                                    sharpencil@gmail.com
                                 </a>
                             </li>
                         </ul>
