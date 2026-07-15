@@ -39,7 +39,7 @@ export default function WorkClient() {
             description:
                 "Solving the 'Commingled Route Paradox.' I re-architected a legacy Java Swing logistics system into a modern web platform. By moving from flat lists to Nested Logic Visualization, I reduced cognitive load for dispatchers handling thousands of orders.",
             metrics: "Reduced Dispatch Error Rate. 40% Faster Onboarding.",
-            imageColor: "bg-blue-100", // Placeholder for image
+            imageColor: "bg-slate-950",
             layout: "left",
             slug: "/work/operational-intelligence"
         },
@@ -123,15 +123,202 @@ export default function WorkClient() {
                                 {/* Image Side */}
                                 <div className="w-full lg:w-3/5">
                                     <Link href={study.slug || "#"} className={`block aspect-[16/10] rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden relative group cursor-pointer border border-white/50 ${study.imageColor}`}>
-                                        {/* Placeholder Visuals */}
-                                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                            <span className="bg-white/90 text-authority-navy px-6 py-2 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Project</span>
+                                        
+                                        {/* Abstract UI Mockup */}
+                                        <div className="absolute inset-0 p-6 flex flex-col justify-between overflow-hidden">
+                                            {/* SmartStream Mockup */}
+                                            {study.id === "smartstream" && (
+                                                <div className="w-full h-full flex flex-col justify-between text-white font-mono text-[9px]">
+                                                    <div className="flex justify-between items-center opacity-60 border-b border-white/10 pb-2.5">
+                                                        <span>PULSE TIMELINE FLOW</span>
+                                                        <span>AI-CFM FORECAST ACTIVE</span>
+                                                    </div>
+                                                    <div className="flex-1 flex flex-col justify-center gap-3 my-2">
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="w-10 opacity-40 shrink-0">LANE API</span>
+                                                            <div className="h-6 bg-white/10 border border-white/20 rounded-lg flex-1 flex items-center px-3">
+                                                                <span className="w-2 h-2 rounded-full bg-emerald-400 mr-2" />
+                                                                <span>Sprint JWT Auth Route</span>
+                                                            </div>
+                                                            <div className="h-6 bg-white/5 border border-dashed border-white/15 rounded-lg w-20 flex items-center justify-center opacity-40">
+                                                                <span>Forecast</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="w-10 opacity-40 shrink-0">LANE UI</span>
+                                                            <div className="h-6 bg-white/10 border border-white/20 rounded-lg w-24 flex items-center px-3">
+                                                                <span className="w-2 h-2 rounded-full bg-emerald-400 mr-2" />
+                                                                <span>Database Init</span>
+                                                            </div>
+                                                            <div className="h-6 bg-rose-500/10 border border-rose-500/30 rounded-lg flex-1 flex items-center px-3 text-rose-300">
+                                                                <span className="w-2 h-2 rounded-full bg-rose-500 mr-2 animate-pulse" />
+                                                                <span>Dependency Ripple (+1.5d)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex justify-between items-center border-t border-white/10 pt-2.5 text-[8px] opacity-40">
+                                                        <span>NOW INDEX ACTIVE</span>
+                                                        <span>RIPPLE EFFECT SIMULATION</span>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Iodine Interact Mockup */}
+                                            {study.id === "iodine" && (
+                                                <div className="w-full h-full flex items-center justify-center py-2">
+                                                    <div className="w-48 h-full bg-slate-900 border-4 border-slate-800 rounded-3xl p-3 flex flex-col justify-between shadow-2xl relative">
+                                                        <div className="w-12 h-2.5 bg-slate-800 rounded-full mx-auto mb-1.5" />
+                                                        <div className="flex-1 flex flex-col justify-start gap-2 text-left">
+                                                            <div className="p-2 bg-white/5 border border-white/10 rounded-xl text-white">
+                                                                <div className="text-[6px] font-mono opacity-50 mb-0.5">EMR QUERY SIGNAL</div>
+                                                                <div className="text-[9px] font-bold tracking-tight mb-0.5">Confirm Query #341</div>
+                                                                <div className="p-1 bg-white/5 rounded text-[6px] font-mono text-cyan-300">
+                                                                    "...abnormal potassium levels..."
+                                                                </div>
+                                                            </div>
+                                                            <div className="h-5 bg-electric-cyan rounded-lg flex items-center justify-center text-authority-navy text-[8px] font-bold">
+                                                                Yes, Document
+                                                            </div>
+                                                            <div className="h-5 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center text-white text-[8px] font-bold">
+                                                                No, Refute
+                                                            </div>
+                                                        </div>
+                                                        <div className="w-8 h-1 bg-slate-800 rounded-full mx-auto mt-1" />
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* TForce Logistics Mockup */}
+                                            {study.id === "tforce" && (
+                                                <div className="w-full h-full flex flex-col justify-between text-white/80 font-mono text-[9px]">
+                                                    <div className="flex items-center gap-1.5 border-b border-slate-800 pb-2">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
+                                                        <span className="ml-1.5 opacity-40 text-[8px]">DECS_WORKSPACE.SYS</span>
+                                                    </div>
+                                                    <div className="flex-1 grid grid-cols-3 gap-3 my-3 text-left">
+                                                        <div className="col-span-2 border border-slate-800 p-2.5 rounded-lg bg-slate-950/60 flex flex-col gap-2">
+                                                            <div className="text-[7px] opacity-40">ORDER ROUTE CHECKLIST</div>
+                                                            <div className="h-5 bg-white/5 rounded border border-white/10 flex items-center justify-between px-2 text-[8px]">
+                                                                <span>Stop 1: Austin Terminal</span>
+                                                                <span className="text-emerald-400">Verified</span>
+                                                            </div>
+                                                            <div className="h-5 bg-rose-500/10 rounded border border-rose-500/20 flex items-center justify-between px-2 text-[8px] text-rose-300">
+                                                                <span>Stop 2: Commingled Hub B</span>
+                                                                <span className="text-rose-400">Address Conflict</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="border border-slate-800 p-2.5 rounded-lg bg-slate-950/60 flex flex-col justify-between">
+                                                            <div className="text-[7px] opacity-40">ACCELERATION</div>
+                                                            <div className="text-[14px] font-bold text-electric-cyan font-sans leading-none">99.2%</div>
+                                                            <div className="text-[6px] opacity-50 leading-tight">API Routing Accuracy</div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex justify-between items-center opacity-40 border-t border-slate-800 pt-2 text-[8px]">
+                                                        <span>ROUTE CLUSTERS SYNCED</span>
+                                                        <span>MELISSA API SUPPORT</span>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Siemens DFL Mockup */}
+                                            {study.id === "siemens" && (
+                                                <div className="w-full h-full flex items-center justify-center py-2">
+                                                    <div className="w-56 h-full bg-slate-900 border-4 border-slate-800 rounded-2xl p-2.5 flex flex-col justify-between shadow-2xl">
+                                                        <div className="flex justify-between items-center border-b border-white/10 pb-1 text-[7px] text-white/50 font-mono">
+                                                            <span>DIGITAL FACILITY LOG</span>
+                                                            <span className="text-electric-cyan">iPad REMOTE</span>
+                                                        </div>
+                                                        <div className="flex-1 flex flex-col justify-center gap-1.5 my-1 text-left text-white">
+                                                            <div className="p-1 bg-white/5 rounded border border-white/10 flex items-start gap-1.5">
+                                                                <span className="px-1 py-0.5 bg-rose-500 text-white rounded text-[5px] font-mono font-bold mt-0.5">ALARM</span>
+                                                                <div className="leading-tight">
+                                                                    <div className="text-[7px] font-bold">Chiller Pressure Spike</div>
+                                                                    <div className="text-[6px] opacity-50">Facility Room B • 12m ago</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="h-5 bg-slate-950 rounded border border-white/5 px-2 flex items-center gap-0.5 overflow-hidden">
+                                                                <div className="w-0.5 bg-electric-cyan h-2" />
+                                                                <div className="w-0.5 bg-electric-cyan h-1.5" />
+                                                                <div className="w-0.5 bg-electric-cyan h-3" />
+                                                                <div className="w-0.5 bg-electric-cyan h-2.5" />
+                                                                <div className="w-0.5 bg-electric-cyan h-3.5" />
+                                                                <div className="w-0.5 bg-electric-cyan h-1.5" />
+                                                                <span className="text-[5px] font-mono text-white/40 ml-1.5 truncate">Acoustic Signal Diagnostic Waveform</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="w-2 h-2 rounded-full bg-slate-800 mx-auto" />
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Evergreen SIS Mockup */}
+                                            {study.id === "evergreen" && (
+                                                <div className="w-full h-full flex flex-col justify-between text-white font-sans">
+                                                    <div className="flex justify-between items-center opacity-60 border-b border-white/10 pb-2 text-[8px] font-mono">
+                                                        <span>EVERGREEN COLLEGE AUDIT</span>
+                                                        <span>IMPERSONATION MODE ACTIVE</span>
+                                                    </div>
+                                                    <div className="flex-1 flex items-center justify-center gap-3 my-2 text-left">
+                                                        <div className="p-2 bg-slate-900 border border-slate-800 rounded-xl flex-1 flex flex-col gap-1.5">
+                                                            <div className="text-[7px] font-mono text-emerald-400 font-bold">STUDENT PROGRESS CARD</div>
+                                                            <div className="text-[10px] font-bold leading-tight">Clara Martinez (Cosmetology)</div>
+                                                            <div className="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                                                <div className="bg-emerald-500 h-full w-[82%]" />
+                                                            </div>
+                                                            <div className="flex justify-between text-[6px] font-mono opacity-50">
+                                                                <span>984 / 1200 Clock-Hours</span>
+                                                                <span>82% Complete</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="p-2 bg-amber-500/10 border border-amber-500/30 rounded-xl w-24 flex flex-col justify-center">
+                                                            <div className="text-[7px] font-mono text-amber-300 font-bold mb-1">AUDIT INDEX</div>
+                                                            <div className="text-[11px] font-bold text-amber-200">Zero Flags</div>
+                                                            <div className="text-[5px] text-amber-300/60 font-mono">Title IV Verified</div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex justify-between items-center border-t border-white/10 pt-2 text-[8px] font-mono opacity-40">
+                                                        <span>FEDERAL COMPLIANCE VERIFICATION</span>
+                                                        <span>CLOCK-HOUR RECORDING</span>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Siemens Config Mockup */}
+                                            {study.id === "siemens-config" && (
+                                                <div className="w-full h-full flex flex-col justify-between text-authority-navy font-sans">
+                                                    <div className="flex justify-between items-center opacity-60 border-b border-slate-200 pb-2 text-[8px] font-mono">
+                                                        <span>COMMISSIONING WORKSPACE</span>
+                                                        <span>PORTAL WIZARD STAGES</span>
+                                                    </div>
+                                                    <div className="flex-1 flex flex-col gap-2 my-2.5 text-left">
+                                                        <div className="flex items-center gap-2">
+                                                            <div className="w-3.5 h-3.5 bg-emerald-500 rounded-full flex items-center justify-center text-white text-[7px] font-bold">✓</div>
+                                                            <span className="text-[8px] font-medium text-slate-600 font-mono">1. Commission Gateway Controller</span>
+                                                        </div>
+                                                        <div className="flex items-center gap-2">
+                                                            <div className="w-3.5 h-3.5 bg-electric-cyan text-authority-navy rounded-full flex items-center justify-center text-[7px] font-bold">2</div>
+                                                            <span className="text-[8px] font-bold text-slate-800 font-mono">2. Apply Bulk Temperature Limits</span>
+                                                            <span className="px-1.5 py-0.5 bg-slate-200 rounded text-[6px] font-mono text-slate-500 ml-auto">94 Sites Selected</span>
+                                                        </div>
+                                                        <div className="h-4 bg-slate-100 border border-slate-200 rounded flex items-center px-1.5 text-[7px] text-slate-600 font-mono">
+                                                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5" />
+                                                            <span>All parameters conform to core schema limits.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex justify-between items-center border-t border-slate-200 pt-2 text-[8px] font-mono opacity-40">
+                                                        <span>CONCURRENT WRITE PROTECTION</span>
+                                                        <span>GRID VIEW PANEL</span>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
-                                         <div className={`absolute inset-0 flex items-center justify-center font-heading text-6xl font-black uppercase tracking-tighter select-none ${
-                                             study.id === "smartstream" || study.id === "evergreen" || study.id === "siemens" || study.id === "siemens-config" || study.id === "iodine" ? "text-white/10" : "text-authority-navy/10"
-                                         }`}>
-                                             {study.client.split(' ')[0]}
-                                         </div>
+
+                                        {/* Hover Overlay */}
+                                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <span className="bg-white/90 text-authority-navy px-6 py-2.5 rounded-full font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 text-sm tracking-wide">View Case Study</span>
+                                        </div>
                                     </Link>
                                 </div>
 
