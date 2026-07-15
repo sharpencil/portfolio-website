@@ -80,13 +80,13 @@ export default function AboutClient() {
                             </h2>
                             <div className="space-y-6 text-lg text-authority-navy/80 leading-relaxed font-light">
                                 <p>
-                                    For a decade, I operated as a traditional UX consultant. I realized that design doesn't stop at the pixel. It stops at the logic. To truly control the User Experience, you must control the System Architecture.
+                                    Throughout my career as a UX leader and cognitive systems engineer, I have believed that design doesn't stop at the pixel—it extends into the system logic. To truly build high-performing user experiences, design must align deeply with engineering and system architecture.
                                 </p>
                                 <p>
-                                    Most agencies hand off a Figma file and hope for the best. I view that as a failure of responsibility.
+                                    I believe that a designer's responsibility goes far beyond handing off static Figma files. True design leadership means partnering with cross-functional teams to ensure that product vision is executed with technical accuracy and operational excellence.
                                 </p>
                                 <p className="font-semibold text-authority-navy">
-                                    I practice Logic Architecture. I don't just hand you a blueprint; I write the code and build the foundation.
+                                    I practice UX Architecture. I don't just deliver blueprints; I bridge the gap between design theory, product strategy, and production-ready code to build robust foundations for enterprise-scale platforms.
                                 </p>
                             </div>
 
