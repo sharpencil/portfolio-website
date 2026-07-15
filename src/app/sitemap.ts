@@ -9,7 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/capabilities',
     '/start',
     '/work',
+    '/work/smartstream',
+    '/work/iodine-interact',
     '/work/operational-intelligence',
+    '/work/siemens-dfl',
+    '/work/evergreen-sis',
+    '/work/siemens-config-tool',
+    '/work/outpatient',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

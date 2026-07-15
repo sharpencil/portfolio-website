@@ -33,7 +33,7 @@ export default function WorkClient() {
             imageColor: "bg-gradient-to-br from-[#112D4E] to-slate-950",
             layout: "right",
             slug: "/work/iodine-interact",
-            image: "/images/iodine.png"
+            image: "/images/iodine_interact.png"
         },
         {
             id: "tforce",
@@ -59,7 +59,7 @@ export default function WorkClient() {
             imageColor: "bg-gradient-to-br from-[#003C43] to-slate-950",
             layout: "right",
             slug: "/work/siemens-dfl",
-            image: "/images/siemens-dfl.png"
+            image: "/images/siemens_digitalfacilitylog.png"
         },
         {
             id: "evergreen",
@@ -72,7 +72,7 @@ export default function WorkClient() {
             imageColor: "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
             layout: "left",
             slug: "/work/evergreen-sis",
-            image: "/images/evergreen.png"
+            image: "/images/ebc.png"
         },
         {
             id: "siemens-config",
@@ -85,7 +85,20 @@ export default function WorkClient() {
             imageColor: "bg-gradient-to-br from-[#1F4E5B] to-slate-900",
             layout: "right",
             slug: "/work/siemens-config-tool",
-            image: "/images/siemens-config.png"
+            image: "/images/simens_configuration.png"
+        },
+        {
+            id: "outpatient",
+            title: "Ambulatory CDI Workspace.",
+            client: "ChartWise Outpatient",
+            tags: ["HCC Management", "Pre-Visit Planning", "RAF Score Modeling"],
+            description:
+                "Modernizing ambulatory clinical documentation integrity. I engineered an outpatient workspace focusing on Hierarchical Condition Categories (HCC) capture, a 5-day pre-visit scheduler, and real-time Risk Adjustment Factor (RAF) score calculations.",
+            metrics: "Enhanced Medicare Advantage Revenue. Automated Compliance.",
+            imageColor: "bg-gradient-to-br from-[#0F1E36] to-slate-950",
+            layout: "left",
+            slug: "/work/outpatient",
+            image: "/images/iodine_outpatient.png"
         },
     ];
 
@@ -334,6 +347,48 @@ export default function WorkClient() {
                                                     <div className="flex justify-between items-center border-t border-slate-200 pt-2 text-[8px] font-mono opacity-40">
                                                         <span>CONCURRENT WRITE PROTECTION</span>
                                                         <span>GRID VIEW PANEL</span>
+                                                    </div>
+                                                </div>
+                                            )}
+                                            {/* OutPatient Mockup */}
+                                            {study.id === "outpatient" && (
+                                                <div className="w-full h-full flex flex-col justify-between text-white font-mono text-[9px]">
+                                                    <div className="flex justify-between items-center opacity-60 border-b border-white/10 pb-2.5">
+                                                        <span>CHARTWISE OUTPATIENT CDI</span>
+                                                        <span className="text-electric-cyan">HCC MANAGER</span>
+                                                    </div>
+                                                    <div className="flex-1 grid grid-cols-12 gap-3 my-3 text-left">
+                                                        {/* Schedule & Pre-Visit Column (8 Cols) */}
+                                                        <div className="col-span-8 border border-slate-800 p-2 rounded-lg bg-slate-950/60 flex flex-col gap-2">
+                                                            <div className="text-[7px] opacity-40">PRE-VISIT CALENDAR (5-DAY SPREAD)</div>
+                                                            <div className="flex gap-1.5 justify-between">
+                                                                {["Mon", "Tue", "Wed", "Thu", "Fri"].map((day, idx) => (
+                                                                    <div key={day} className={`flex-1 p-1 rounded border text-center ${idx === 2 ? "bg-electric-cyan/20 border-electric-cyan text-electric-cyan" : "bg-white/5 border-white/10 opacity-60"}`}>
+                                                                        <div className="text-[6px]">{day}</div>
+                                                                        <div className="font-bold text-[8px] mt-0.5">{idx * 2 + 3}</div>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                            <div className="h-5 bg-white/5 rounded border border-white/10 flex items-center px-1.5 text-[7px] justify-between">
+                                                                <span>Confirm HCC Recapture (PCP)</span>
+                                                                <span className="text-cyan-300">Ready</span>
+                                                            </div>
+                                                        </div>
+                                                        {/* RAF Score & Query Panel (4 Cols) */}
+                                                        <div className="col-span-4 flex flex-col gap-2">
+                                                            <div className="border border-slate-800 p-2 rounded-lg bg-slate-950/60 flex-1 flex flex-col justify-between">
+                                                                <div className="text-[7px] opacity-40 leading-none">RAF SCORE</div>
+                                                                <div className="text-lg font-bold text-electric-cyan tracking-tight">1.84</div>
+                                                                <div className="text-[5px] text-emerald-400 font-bold">+0.42 Adj</div>
+                                                            </div>
+                                                            <div className="h-5 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center text-[7px] font-bold">
+                                                                Query Builder
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex justify-between items-center opacity-40 border-t border-white/10 pt-2.5 text-[8px]">
+                                                        <span>HCC RECAPTURE KPI</span>
+                                                        <span>SNOMED DICTIONARY SYNC</span>
                                                     </div>
                                                 </div>
                                             )}
