@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WorkClient() {
     const caseStudies = [
@@ -17,7 +19,8 @@ export default function WorkClient() {
             metrics: "Zero-Friction Operations. Predictive Shift Modeling.",
             imageColor: "bg-gradient-to-br from-slate-900 to-authority-navy border-slate-800",
             layout: "left",
-            slug: "/work/smartstream"
+            slug: "/work/smartstream",
+            image: "/images/smartstream.png"
         },
         {
             id: "iodine",
@@ -29,7 +32,8 @@ export default function WorkClient() {
             metrics: "Increased Response Rate. Under 2-Minute Actions.",
             imageColor: "bg-gradient-to-br from-[#112D4E] to-slate-950",
             layout: "right",
-            slug: "/work/iodine-interact"
+            slug: "/work/iodine-interact",
+            image: "/images/iodine.png"
         },
         {
             id: "tforce",
@@ -41,7 +45,8 @@ export default function WorkClient() {
             metrics: "Reduced Dispatch Error Rate. 40% Faster Onboarding.",
             imageColor: "bg-slate-950",
             layout: "left",
-            slug: "/work/operational-intelligence"
+            slug: "/work/operational-intelligence",
+            image: "/images/tforce.png"
         },
         {
             id: "siemens",
@@ -53,7 +58,8 @@ export default function WorkClient() {
             metrics: "Remote Collaboration. Sound-Based Diagnostics.",
             imageColor: "bg-gradient-to-br from-[#003C43] to-slate-950",
             layout: "right",
-            slug: "/work/siemens-dfl"
+            slug: "/work/siemens-dfl",
+            image: "/images/siemens-dfl.png"
         },
         {
             id: "evergreen",
@@ -65,7 +71,8 @@ export default function WorkClient() {
             metrics: "Automated Financial Aid. Instant Clock-Hour Auditing.",
             imageColor: "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
             layout: "left",
-            slug: "/work/evergreen-sis"
+            slug: "/work/evergreen-sis",
+            image: "/images/evergreen.png"
         },
         {
             id: "siemens-config",
@@ -77,9 +84,12 @@ export default function WorkClient() {
             metrics: "Zero JSON Errors. 3x Faster Site Commissioning.",
             imageColor: "bg-gradient-to-br from-[#1F4E5B] to-slate-900",
             layout: "right",
-            slug: "/work/siemens-config-tool"
+            slug: "/work/siemens-config-tool",
+            image: "/images/siemens-config.png"
         },
     ];
+
+    const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
     return (
         <main className="min-h-screen bg-white selection:bg-electric-cyan selection:text-authority-navy font-sans">
@@ -120,12 +130,26 @@ export default function WorkClient() {
                                 className={`flex flex-col ${study.layout === "right" ? "lg:flex-row-reverse" : "lg:flex-row"
                                     } gap-12 lg:gap-20 items-center`}
                             >
-                                {/* Image Side */}
                                 <div className="w-full lg:w-3/5">
                                     <Link href={study.slug || "#"} className={`block aspect-[16/10] rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden relative group cursor-pointer border border-white/50 ${study.imageColor}`}>
-                                        
-                                        {/* Abstract UI Mockup */}
-                                        <div className="absolute inset-0 p-6 flex flex-col justify-between overflow-hidden">
+                                        {/* Real Image with code fallback */}
+                                        {!imageErrors[study.id] && study.image ? (
+                                            <div className="absolute inset-0 w-full h-full">
+                                                <Image 
+                                                    src={study.image} 
+                                                    alt={`${study.client} Preview`} 
+                                                    fill 
+                                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    onError={() => {
+                                                        setImageErrors(prev => ({ ...prev, [study.id]: true }));
+                                                    }}
+                                                />
+                                            </div>
+                                        ) : null}
+
+                                        {/* Abstract UI Mockup (Fallback if image fails or is missing) */}
+                                        {(!study.image || imageErrors[study.id]) && (
+                                            <div className="absolute inset-0 p-6 flex flex-col justify-between overflow-hidden">
                                             {/* SmartStream Mockup */}
                                             {study.id === "smartstream" && (
                                                 <div className="w-full h-full flex flex-col justify-between text-white font-mono text-[9px]">
@@ -313,7 +337,8 @@ export default function WorkClient() {
                                                     </div>
                                                 </div>
                                             )}
-                                        </div>
+                                            </div>
+                                        )}
 
                                         {/* Hover Overlay */}
                                         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
