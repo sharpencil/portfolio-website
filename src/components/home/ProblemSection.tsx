@@ -5,23 +5,23 @@ import { AlertTriangle, ShieldAlert, Cpu, Activity } from "lucide-react";
 
 const problems = [
     {
-        title: "Probabilistic Hallucination",
-        description: "AI guesses user intent based on averages. I use Human Factors rigor to map specific intent.",
+        title: "System Fragmentation",
+        description: "Siloed product modules designed without a unified interaction architecture lead to disjointed experiences and higher customer support volume.",
         icon: AlertTriangle
     },
     {
-        title: "Incoherent System Behavior",
-        description: "Without a Headless System (SYSTEM.md), AI hallucinates fragmented patterns.",
+        title: "The Handoff Bottleneck",
+        description: "Handing off layout specs without state definitions forces development teams to guess interface behavior, causing delays and refactoring loops.",
         icon: Cpu
     },
     {
-        title: "The Happy Path Illusion",
-        description: "AI ignores complex error states. I architect the error recovery loops.",
+        title: "Happy-Path Blindness",
+        description: "Software that functions under ideal conditions but fails to address complex data states, latency, network errors, and cognitive load exceptions.",
         icon: Activity
     },
     {
-        title: "Architecture-Blind Code",
-        description: "AI writes code that breaks later. I architect the Data Schema first.",
+        title: "Governance Overload",
+        description: "Design systems that exist solely as static libraries in design files but lack direct token mapping and structural synchronization with live production code.",
         icon: ShieldAlert
     }
 ];
@@ -32,10 +32,10 @@ export default function ProblemSection() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-bold font-heading text-authority-navy mb-6">
-                        AI Scales Execution. <br />It Does Not Scale Understanding.
+                        Enterprise Platforms are Complex. <br />Design is Only Half the Solution.
                     </h2>
                     <p className="text-xl text-authority-navy/70 font-light leading-relaxed">
-                        Without a Logic Architect, AI creates Technical Debt at record speeds.
+                        Without cognitive systems engineering, digital products accumulate technical and interaction debt.
                     </p>
                 </div>
 

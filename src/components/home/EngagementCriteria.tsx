@@ -7,9 +7,9 @@ export default function EngagementCriteria() {
         <section className="py-24 bg-authority-navy text-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">Collaboration Style</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">Organizational Fit</h2>
                     <p className="text-xl text-white/70 font-light max-w-2xl mx-auto">
-                        I am not a generalist designer. I lead complex UX Architectures, bridging human factors and code.
+                        I serve as a strategic design leader, bridging human factors research and complex software engineering at scale.
                     </p>
                 </div>
 
@@ -18,20 +18,20 @@ export default function EngagementCriteria() {
                     {/* Left Column: Compatible */}
                     <div className="p-10 md:p-12 bg-white/5 backdrop-blur-sm border-r border-white/10">
                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
-                            Where I add the most value:
+                            How I add value to in-house teams:
                         </h3>
-                        <p className="text-white/50 text-sm uppercase tracking-widest mb-8">Green Flags</p>
+                        <p className="text-white/50 text-sm uppercase tracking-widest mb-8">Value Drivers</p>
 
                         <ul className="space-y-6">
                             {[
-                                "High-Complexity Domains (FinTech/Data)",
-                                "Engineering-Led Teams",
-                                "Execution-Ready",
-                                "Value Logic over Cosmetics"
+                                "Leading Complex Enterprise Software (FinTech, MedTech, IoT)",
+                                "Cross-Functional Design-to-Engineering Integration",
+                                "Advancing Rigorous Human Factors & User Research",
+                                "Scaling Production-Grade Design Systems"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-4">
                                     <CheckCircle2 className="w-6 h-6 text-electric-cyan shrink-0" />
-                                    <span className="text-lg font-light text-white/90">{item}</span>
+                                    <span className="text-base font-light text-white/90 leading-snug">{item}</span>
                                 </li>
                             ))}
                         </ul>
@@ -40,20 +40,20 @@ export default function EngagementCriteria() {
                     {/* Right Column: Conflicts */}
                     <div className="p-10 md:p-12 bg-white/5 backdrop-blur-sm">
                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
-                            Where my approach conflicts:
+                            Mismatched work environments:
                         </h3>
-                        <p className="text-white/50 text-sm uppercase tracking-widest mb-8">System Conflicts</p>
+                        <p className="text-white/50 text-sm uppercase tracking-widest mb-8">Design Friction Points</p>
 
                         <ul className="space-y-6">
                             {[
-                                "Vibe-Only Projects",
-                                "Happy Path Thinking",
-                                "Waterfall Process",
-                                "Design by Committee"
+                                "Purely Cosmetic or Happy-Path-Only Design Tasks",
+                                "Static Design Handoffs without Interactive Logic",
+                                "Waterfall or Siloed Departmental Workflows",
+                                "Lack of Research & Evidence-Based Decision Making"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-4">
                                     <XCircle className="w-6 h-6 text-slate-400 shrink-0" />
-                                    <span className="text-lg font-light text-white/60">{item}</span>
+                                    <span className="text-base font-light text-white/60 leading-snug">{item}</span>
                                 </li>
                             ))}
                         </ul>

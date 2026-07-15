@@ -44,7 +44,7 @@ export default function Hero() {
                             href="/start"
                             className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-authority-navy bg-electric-cyan rounded-full shadow-lg shadow-electric-cyan/25 hover:shadow-electric-cyan/50 hover:-translate-y-1 transition-all duration-300"
                         >
-                            Start Conversation
+                            Contact
                         </Link>
                     </div>
                 </motion.div>

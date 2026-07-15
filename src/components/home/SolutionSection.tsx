@@ -5,23 +5,23 @@ import { BrainCircuit, GitBranch, Terminal, Layers } from "lucide-react";
 
 const solutions = [
     {
-        title: "Intent over Interface",
-        description: "I design the Lifecycle of Intent. The interface is secondary to the logic.",
+        title: "Systems Thinking",
+        description: "Designing modular systems architectures and structural user flows where layouts are driven by robust semantic interaction rules.",
         icon: BrainCircuit
     },
     {
-        title: "Logic over Layout",
-        description: "I don't just arrange pixels; I engineer State Machines.",
+        title: "State-Driven UX",
+        description: "Structuring user actions as coherent state machines, planning ahead for loading indicators, error boundaries, and data validations.",
         icon: GitBranch
     },
     {
-        title: "Validation over Vibes",
-        description: "Code-First Validation. Testing physics in the browser, not the slide deck.",
+        title: "Prototype Rigor",
+        description: "Building interactive, high-fidelity prototypes to test cognitive load and usability physics in the browser before committing engineering resources.",
         icon: Terminal
     },
     {
-        title: "Production over Prototype",
-        description: "No handoffs. I deliver clean system architectures and production-ready code.",
+        title: "Engineering Alignment",
+        description: "Speaking the language of code, documenting schema architectures, and collaborating directly with engineers to ship production-grade software.",
         icon: Layers
     }
 ];
