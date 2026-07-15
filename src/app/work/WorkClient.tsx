@@ -147,12 +147,12 @@ export default function WorkClient() {
                                     <Link href={study.slug || "#"} className={`block aspect-[16/10] rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden relative group cursor-pointer border border-white/50 ${study.imageColor}`}>
                                         {/* Real Image with code fallback */}
                                         {!imageErrors[study.id] && study.image ? (
-                                            <div className="absolute inset-0 w-full h-full">
+                                            <div className="absolute inset-4">
                                                 <Image 
                                                     src={study.image} 
                                                     alt={`${study.client} Preview`} 
                                                     fill 
-                                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    className="object-contain group-hover:scale-[1.03] transition-transform duration-500"
                                                     onError={() => {
                                                         setImageErrors(prev => ({ ...prev, [study.id]: true }));
                                                     }}
