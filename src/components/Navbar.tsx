@@ -8,7 +8,7 @@ const navLinks = [
     { name: "Home", href: "/" },
     { name: "Capabilities", href: "/capabilities" },
     { name: "Work", href: "/work" },
-    { name: "The Lab", href: "/about" },
+    { name: "About", href: "/about" },
 ];
 
 export default function Navbar() {
@@ -44,7 +44,7 @@ export default function Navbar() {
                         href="/start"
                         className="px-6 py-2.5 text-sm font-semibold text-authority-navy bg-electric-cyan rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-0.5 transition-all duration-300"
                     >
-                        Get Started
+                        Contact
                     </Link>
                 </div>
             </div>
