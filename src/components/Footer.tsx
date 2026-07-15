@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className="md:col-span-4 space-y-6">
                         <Link href="/" className="flex items-center gap-3 group">
                             <Image src="/images/logo-v2.png" alt="Young Ryu Logo" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />
-                            <h2 className="text-2xl md:text-3xl font-bold font-heading text-authority-navy tracking-tight">Y. RYU, PH.D.</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold font-heading text-authority-navy tracking-tight">Young Ryu, Ph.D.</h2>
                         </Link>
                         <p className="text-sm font-bold uppercase tracking-widest text-authority-navy/60">Director of UX & Product Design</p>
                         <div className="pt-6 text-authority-navy/70 text-sm leading-relaxed font-light">
