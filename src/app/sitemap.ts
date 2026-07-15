@@ -7,13 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/capabilities',
-    '/insights',
-    '/pricing',
     '/start',
     '/work',
-    '/insights/wireframes',
-    '/insights/design-systems-infrastructure',
-    '/insights/ai-ux',
     '/work/operational-intelligence',
   ].map((route) => ({
     url: `${baseUrl}${route}`,

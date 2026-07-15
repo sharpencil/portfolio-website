@@ -31,9 +31,7 @@ export default function Footer() {
                             {[
                                 { name: "Capabilities", href: "/capabilities" },
                                 { name: "Work", href: "/work" },
-                                { name: "Pricing", href: "/pricing" },
                                 { name: "The Lab", href: "/about" },
-                                { name: "Insights", href: "/insights" },
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link href={link.href} className="text-sm font-medium text-authority-navy hover:text-electric-cyan transition-colors">
