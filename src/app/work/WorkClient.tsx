@@ -120,8 +120,7 @@ export default function WorkClient() {
                         Selected Work.
                     </h1>
                     <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-3xl mx-auto leading-relaxed mb-6">
-                        Case studies in UX architecture, complex software ecosystems, and design strategy. <br className="hidden md:block" />
-                        Focusing on evidence-based systems design and collaborative execution at scale.
+                        Case studies in UX architecture, complex software ecosystems, and design strategy. Focusing on evidence-based systems design and collaborative execution at scale.
                     </p>
                     <div className="max-w-xl mx-auto p-4 bg-slate-gray rounded-xl border border-slate-200 text-xs font-light text-authority-navy/80 leading-relaxed text-center">
                         <strong>Confidentiality Notice:</strong> All client deliverables listed below are subject to strict NDAs. Interactive widgets are sanitized, functional wireframe simulations. High-fidelity designs are available for review upon request.
