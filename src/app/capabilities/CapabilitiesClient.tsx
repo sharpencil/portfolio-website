@@ -22,8 +22,7 @@ export default function CapabilitiesClient() {
                             Capabilities.
                         </h1>
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-lg leading-relaxed border-l-4 border-electric-cyan pl-6">
-                            Evidence-based product design. <br />
-                            <span className="font-semibold">Engineered for production.</span>
+                            Design leadership, systems architecture, and UX engineering built for scale.
                         </p>
                     </motion.div>
 
@@ -58,9 +57,9 @@ export default function CapabilitiesClient() {
             <section className="py-24 bg-slate-gray relative">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-5xl font-bold font-heading text-authority-navy mb-4">The Logic Engine</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold font-heading text-authority-navy mb-4">UX Architecture Model</h2>
                         <p className="text-lg text-authority-navy/70 max-w-2xl mx-auto">
-                            I apply rigorous research to align user needs with business goals, ensuring every pixel has a purpose.
+                            I align user research with product strategy, bridging the gap between design vision and engineering execution.
                         </p>
                     </div>
 
@@ -71,33 +70,33 @@ export default function CapabilitiesClient() {
                         {/* Process Steps */}
                         {[
                             {
-                                title: "1. Strategic De-risking",
-                                desc: "Clarity precedes execution. I pressure-test business goals against user needs using AI-driven insights. It's not just about doing research; it's about systematically defining what NOT to build before spending a single development cycle.",
+                                title: "1. Product Discovery & De-risking",
+                                desc: "Clarity precedes code. I partner with product managers and executives to validate business logic and user research before development starts. By pressure-testing hypotheses early, we avoid wasted engineering cycles.",
                                 icon: Activity
                             },
                             {
-                                title: "2. Architecture & Data Strategy",
-                                desc: "Designing the 90% below the surface. I architect how your product organizes and retrieves information (like Context and RAG logic) so the system is optimized for both human intent and AI intelligence.",
+                                title: "2. Information & Data Architecture",
+                                desc: "Designing the 90% below the surface. I structure the information hierarchy, user flows, and complex data relationships needed for high-complexity applications and modern AI integrations.",
                                 icon: BrainCircuit
                             },
                             {
-                                title: "3. Adaptive Interaction Design",
-                                desc: "Structuring the dialogue. I design flexible workflows that handle unpredictable user paths. Instead of static screens, I build intelligent 'Interface Guards' that guide users through ambiguity gracefully without frustration.",
+                                title: "3. Interaction Design & Edge Cases",
+                                desc: "Building comprehensive workflows. I design flexible layouts that handle edge cases, dynamic states, and unexpected user behaviors, ensuring system reliability under pressure.",
                                 icon: Layers
                             },
                             {
                                 title: "4. Rapid Functional Prototyping",
-                                desc: "I stop simulating. Using modern AI tools, I deploy functional working drafts in hours, not weeks. I test real interactions in the browser, exposing edge cases that static mockups can never surface.",
+                                desc: "No more passive simulation. I build interactive HTML/JS prototypes in the browser to run usability tests with real users, exposing design flaws that static Figma screens miss.",
                                 icon: Code
                             },
                             {
-                                title: "5. Systematic Design Governance",
-                                desc: "Code-backed consistency. I build design systems that enforce rules automatically. This ensures that both human developers and any AI agents adhere to your brand identity perfectly moving forward.",
+                                title: "5. Design Systems & Governance",
+                                desc: "Establishing scale. I establish and scale design systems and code tokens to ensure visual and behavioral consistency across multiple product teams and platforms.",
                                 icon: ShieldCheck
                             },
                             {
-                                title: "6. Native Execution & Polish",
-                                desc: "Zero-friction handoffs. I build directly into production-ready code, ensuring performance, spacing, and application logic feel native and polished from Day 1.",
+                                title: "6. Engineering Partnership & QA",
+                                desc: "Bridging the execution gap. I translate design files into clean, production-ready front-end code, working alongside developers to ensure pixel-perfect delivery.",
                                 icon: Cpu
                             }
                         ].map((step, index) => (
@@ -127,35 +126,35 @@ export default function CapabilitiesClient() {
                 </div>
             </section>
 
-            {/* 3. The Technology: "The Agentic Stack" (Deep Navy Background) */}
+            {/* 3. The Technology: "The UX Leadership Stack" (Deep Navy Background) */}
             <section className="py-24 bg-authority-navy text-white">
                 <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-16">The Agentic Stack</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-16">The UX Leadership Stack</h2>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4 text-xl md:text-2xl font-semibold">
                         <div className="bg-white/5 border border-white/10 px-8 py-6 rounded-xl backdrop-blur-sm w-full md:w-auto">
-                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The Brain</span>
+                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The Foundation</span>
                             Ph.D. Human Factors
                         </div>
 
                         <span className="text-electric-cyan text-4xl font-light">+</span>
 
                         <div className="bg-white/5 border border-white/10 px-8 py-6 rounded-xl backdrop-blur-sm w-full md:w-auto">
-                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The System</span>
-                            Next.js & Supabase
+                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The Integration</span>
+                            Design-to-Code Systems
                         </div>
 
                         <span className="text-electric-cyan text-4xl font-light">×</span>
 
                         <div className="bg-white/5 border border-white/10 px-8 py-6 rounded-xl backdrop-blur-sm w-full md:w-auto">
-                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The Accelerator</span>
-                            Agentic AI
+                            <span className="block text-sm text-electric-cyan/70 font-mono mb-2 uppercase tracking-widest">The Velocity</span>
+                            Agentic AI Acceleration
                         </div>
 
                         <span className="text-electric-cyan text-4xl font-light">=</span>
 
                         <div className="text-electric-cyan font-bold text-3xl md:text-4xl mt-4 md:mt-0">
-                            Logic Architecture
+                            Systems UX Leadership
                         </div>
                     </div>
                 </div>
