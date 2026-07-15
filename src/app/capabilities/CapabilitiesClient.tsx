@@ -60,7 +60,7 @@ export default function CapabilitiesClient() {
                     <div className="text-center mb-20">
                         <h2 className="text-4xl md:text-5xl font-bold font-heading text-authority-navy mb-4">The Logic Engine</h2>
                         <p className="text-lg text-authority-navy/70 max-w-2xl mx-auto">
-                            We apply rigorous research to align user needs with business goals, ensuring every pixel has a purpose.
+                            I apply rigorous research to align user needs with business goals, ensuring every pixel has a purpose.
                         </p>
                     </div>
 
@@ -72,32 +72,32 @@ export default function CapabilitiesClient() {
                         {[
                             {
                                 title: "1. Strategic De-risking",
-                                desc: "Clarity precedes execution. We pressure-test business goals against user needs using AI-driven insights. It's not just about doing research; it's about systematically defining what NOT to build before we spend a single development cycle.",
+                                desc: "Clarity precedes execution. I pressure-test business goals against user needs using AI-driven insights. It's not just about doing research; it's about systematically defining what NOT to build before spending a single development cycle.",
                                 icon: Activity
                             },
                             {
                                 title: "2. Architecture & Data Strategy",
-                                desc: "Designing the 90% below the surface. We architect how your product organizes and retrieves information (like Context and RAG logic) so the system is optimized for both human intent and AI intelligence.",
+                                desc: "Designing the 90% below the surface. I architect how your product organizes and retrieves information (like Context and RAG logic) so the system is optimized for both human intent and AI intelligence.",
                                 icon: BrainCircuit
                             },
                             {
                                 title: "3. Adaptive Interaction Design",
-                                desc: "Structuring the dialogue. We design flexible workflows that handle unpredictable user paths. Instead of static screens, we build intelligent 'Interface Guards' that guide users through ambiguity gracefully without frustration.",
+                                desc: "Structuring the dialogue. I design flexible workflows that handle unpredictable user paths. Instead of static screens, I build intelligent 'Interface Guards' that guide users through ambiguity gracefully without frustration.",
                                 icon: Layers
                             },
                             {
                                 title: "4. Rapid Functional Prototyping",
-                                desc: "We stop simulating. Using modern AI tools, we deploy functional working drafts in hours, not weeks. We test real interactions in the browser, exposing edge cases that static mockups can never surface.",
+                                desc: "I stop simulating. Using modern AI tools, I deploy functional working drafts in hours, not weeks. I test real interactions in the browser, exposing edge cases that static mockups can never surface.",
                                 icon: Code
                             },
                             {
                                 title: "5. Systematic Design Governance",
-                                desc: "Code-backed consistency. We build design systems that enforce rules automatically. This ensures that both your human developers and any AI agents adhere to your brand identity perfectly moving forward.",
+                                desc: "Code-backed consistency. I build design systems that enforce rules automatically. This ensures that both human developers and any AI agents adhere to your brand identity perfectly moving forward.",
                                 icon: ShieldCheck
                             },
                             {
                                 title: "6. Native Execution & Polish",
-                                desc: "Zero-friction handoffs. We build directly into production-ready code, ensuring performance, spacing, and application logic feel native and polished from Day 1.",
+                                desc: "Zero-friction handoffs. I build directly into production-ready code, ensuring performance, spacing, and application logic feel native and polished from Day 1.",
                                 icon: Cpu
                             }
                         ].map((step, index) => (

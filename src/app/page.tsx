@@ -8,8 +8,8 @@ import TechStack from "@/components/home/TechStack";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Proto UX | Advanced UX/UI Design Consultancy",
-  description: "Bridging the gap between Cognitive Science and Shipped Code. We design the protocols that govern how humans interact with intelligent systems.",
+  title: "Young Ryu, Ph.D. | Director of UX & Product Design",
+  description: "Cognitive Systems Engineer & UX Architect bridging the gap between Cognitive Science and Shipped Code. Specializing in advanced human-AI systems, complex dashboards, and product logic.",
   alternates: {
     canonical: "/",
   },

@@ -139,7 +139,7 @@ export default function SmartStreamClient() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            Moving beyond digital cabinets like Jira or Asana, we designed a zero-friction engine focused on velocity, predictive scheduling, and explainable AI adjustments.
+                            Moving beyond digital cabinets like Jira or Asana, I designed a zero-friction engine focused on velocity, predictive scheduling, and explainable AI adjustments.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -175,7 +175,7 @@ export default function SmartStreamClient() {
                     <section className="mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-8">Core UI Metaphors: Speaking the Same Language</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8">
-                            To bridge the gap between engineering workflow and user interface, we defined four visual metaphors that ground the SmartStream design system.
+                            To bridge the gap between engineering workflow and user interface, I defined four visual metaphors that ground the SmartStream design system.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {[
@@ -229,7 +229,7 @@ export default function SmartStreamClient() {
                         </div>
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-4">Innovation 1: The "Now Line" & The Dependency Ripple</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8 max-w-3xl">
-                            How do we represent project shifts visually? Rather than static card dragging, the timeline uses a vertical <strong>Now Line</strong>. Solid cards represent completed history, while semi-transparent <strong>Ghost Drops</strong> represent the AI's predictive path for the next 48–72 hours.
+                            How do I represent project shifts visually? Rather than static card dragging, the timeline uses a vertical <strong>Now Line</strong>. Solid cards represent completed history, while semi-transparent <strong>Ghost Drops</strong> represent the AI's predictive path for the next 48–72 hours.
                         </p>
 
                         {/* Interactive Timeline Box */}
@@ -381,7 +381,7 @@ export default function SmartStreamClient() {
                     <section className="mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-4">Innovation 2: Persona-Based Experiences</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8 max-w-3xl">
-                            Different stakeholders require completely different cognitive lenses. We designed three targeted layouts that dynamically re-configure the underlying project engine.
+                            Different stakeholders require completely different cognitive lenses. I designed three targeted layouts that dynamically re-configure the underlying project engine.
                         </p>
 
                         {/* Persona Tabs */}
@@ -675,7 +675,7 @@ export default function SmartStreamClient() {
                     <section className="prose prose-lg max-w-none text-authority-navy/80 font-light leading-relaxed mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-6">The Outcome (Designing Harmony)</h2>
                         <p>
-                            By aligning the user interface around physical metaphors—fluid streams and ripples—rather than static spreadsheets, we created a dashboard that developers and managers *enjoyed* leaving open on a second monitor. 
+                            By aligning the user interface around physical metaphors—fluid streams and ripples—rather than static spreadsheets, I created a dashboard that developers and managers *enjoyed* leaving open on a second monitor. 
                         </p>
                         <p>
                             Removing the friction of "status reporting" meant database updates were instant. Having an explainable "Why" for schedule shifts meant team members never felt micromanaged by an algorithm. The result is a project management tool that acts not as a manager's surveillance camera, but as a team's co-pilot.

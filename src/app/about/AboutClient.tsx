@@ -31,8 +31,8 @@ export default function AboutClient() {
                     className="relative z-10 max-w-5xl mx-auto"
                 >
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading text-authority-navy mb-8 leading-tight">
-                        We don’t just design interfaces. <br />
-                        We engineer the <span className="text-transparent bg-clip-text bg-gradient-to-r from-authority-navy to-electric-cyan">psychology behind them.</span>
+                        I don’t just design interfaces. <br />
+                        I engineer the <span className="text-transparent bg-clip-text bg-gradient-to-r from-authority-navy to-electric-cyan">psychology behind them.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-3xl mx-auto leading-relaxed border-t border-authority-navy/10 pt-8">
                         Bridging the gap between Cognitive Science and Shipped Code.
@@ -83,17 +83,17 @@ export default function AboutClient() {
                                     For a decade, I operated as a traditional UX consultant. I realized that design doesn't stop at the pixel. It stops at the logic. To truly control the User Experience, you must control the System Architecture.
                                 </p>
                                 <p>
-                                    Most agencies hand off a Figma file and hope for the best. We view that as a failure of responsibility.
+                                    Most agencies hand off a Figma file and hope for the best. I view that as a failure of responsibility.
                                 </p>
                                 <p className="font-semibold text-authority-navy">
-                                    Today, Proto UX is a Logic Architecture Lab. We don't just hand you a blueprint; we pour the foundation.
+                                    I practice Logic Architecture. I don't just hand you a blueprint; I write the code and build the foundation.
                                 </p>
                             </div>
 
                             <div className="mt-12 border-t border-authority-navy/10 pt-6">
-                                <div className="text-authority-navy font-bold text-sm tracking-wider">Founder & Principal Architect</div>
+                                <div className="text-authority-navy font-bold text-sm tracking-wider">Director of UX & Principal Architect</div>
                                 <div className="text-authority-navy text-sm tracking-wider mt-1">Young Ryu, Ph.D.</div>
-                                <div className="text-authority-navy/60 text-sm uppercase tracking-wider mt-1">Proto UX Lab</div>
+                                <div className="text-authority-navy/60 text-sm uppercase tracking-wider mt-1">Cognitive Systems Engineering</div>
                             </div>
                         </motion.div>
 
@@ -104,7 +104,7 @@ export default function AboutClient() {
             {/* 3. The Philosophy Block (Deep Navy Background) */}
             <section className="py-32 bg-authority-navy text-white text-center">
                 <div className="container mx-auto px-6 max-w-4xl">
-                    <h2 className="text-sm md:text-base font-bold uppercase tracking-[0.2em] text-electric-cyan mb-12 opacity-80">Redefining 'Proto'</h2>
+                    <h2 className="text-sm md:text-base font-bold uppercase tracking-[0.2em] text-electric-cyan mb-12 opacity-80">Design Philosophy</h2>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-4xl md:text-6xl font-black font-heading tracking-tight mb-12">
                         <span className="text-white/30 line-through decoration-electric-cyan/50 decoration-4">Prototype</span>
@@ -114,9 +114,9 @@ export default function AboutClient() {
                     </div>
 
                     <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light max-w-2xl mx-auto">
-                        In 2016, Proto stood for Prototype. <br className="hidden md:block" />
-                        In 2026, it stands for Protocol. <br className="hidden md:block" />
-                        <span className="text-white font-medium mt-4 block">We design the protocols that govern how humans interact with intelligent systems.</span>
+                        In the past, interface design stood for simple prototyping. <br className="hidden md:block" />
+                        Today, it stands for rigorous interaction protocol. <br className="hidden md:block" />
+                        <span className="text-white font-medium mt-4 block">I design the protocols that govern how humans interact with complex, intelligent systems.</span>
                     </p>
                 </div>
             </section>

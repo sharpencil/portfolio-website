@@ -57,22 +57,22 @@ export default function StartClient() {
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
                             <span className="text-xs font-bold uppercase tracking-wide text-authority-navy/70">
-                                Accepting partners for Q1 2026
+                                Open to new opportunities
                             </span>
                         </div>
 
                         <h1 className="text-5xl md:text-6xl font-bold font-heading text-authority-navy mb-6 leading-tight">
-                            Initiate Protocol.
+                            Let's Connect.
                         </h1>
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light mb-12 leading-relaxed">
-                            Ready to build with rigor? Tell us about the logic challenge you are facing.
+                            Ready to collaborate? Reach out about open roles, consulting needs, or design challenges.
                         </p>
 
                         <div className="space-y-8 border-t border-authority-navy/10 pt-8">
                             <div className="flex items-start gap-4">
                                 <Mail className="w-6 h-6 text-authority-navy shrink-0 mt-1" />
                                 <div>
-                                    <p className="text-sm font-bold uppercase tracking-wide text-authority-navy/60 mb-1">Prefer Email?</p>
+                                    <p className="text-sm font-bold uppercase tracking-wide text-authority-navy/60 mb-1">Direct Email</p>
                                     <a href="mailto:young@protoux.com" className="text-xl font-medium text-authority-navy hover:text-electric-cyan transition-colors">young@protoux.com</a>
                                 </div>
                             </div>
@@ -80,16 +80,16 @@ export default function StartClient() {
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-6 h-6 text-authority-navy shrink-0 mt-1" />
                                 <div>
-                                    <p className="text-sm font-bold uppercase tracking-wide text-authority-navy/60 mb-1">HQ Location</p>
+                                    <p className="text-sm font-bold uppercase tracking-wide text-authority-navy/60 mb-1">Location</p>
                                     <p className="text-xl font-medium text-authority-navy">Austin, TX</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="mt-12 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                            <h3 className="text-lg font-bold font-heading text-authority-navy mb-4">What Happens Next</h3>
+                            <h3 className="text-lg font-bold font-heading text-authority-navy mb-4">Next Steps</h3>
                             <ul className="space-y-3">
-                                {["Review within 24 hours", "30-min Logic Discovery Call", "Proposal & Strategic Roadmap"].map((item, i) => (
+                                {["Email response within 24 hours", "Introductory conversation", "Technical design alignment"].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-authority-navy/80">
                                         <CheckCircle2 className="w-5 h-5 text-electric-cyan" />
                                         <span>{item}</span>
@@ -115,9 +115,9 @@ export default function StartClient() {
                                 <div className="w-20 h-20 bg-electric-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6">
                                     <CheckCircle className="w-10 h-10 text-electric-cyan" />
                                 </div>
-                                <h3 className="text-3xl font-bold font-heading text-authority-navy mb-4">Protocol Initiated.</h3>
+                                <h3 className="text-3xl font-bold font-heading text-authority-navy mb-4">Message Sent.</h3>
                                 <p className="text-authority-navy/70 text-lg max-w-md mx-auto mb-8">
-                                    Your brief has been secured. Our team will analyze your logic challenge and respond within 24 hours.
+                                    Your message has been received. I will review your inquiry and respond shortly.
                                 </p>
                                 <button
                                     onClick={() => window.location.href = '/'}
@@ -141,24 +141,24 @@ export default function StartClient() {
                                         <input required type="text" id="name" name="name" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Jane Doe" />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="email" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Work Email</label>
+                                        <label htmlFor="email" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Email Address</label>
                                         <input required type="email" id="email" name="email" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="jane@company.com" />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="org" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Organization / URL</label>
-                                    <input required type="text" id="org" name="org" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Acme Corp / acme.com" />
+                                    <label htmlFor="org" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Organization / Company</label>
+                                    <input required type="text" id="org" name="org" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Acme Corp" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="model" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Engagement Model</label>
+                                    <label htmlFor="model" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Inquiry Type</label>
                                     <div className="relative">
                                         <select id="model" name="model" defaultValue="" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
                                             <option value="" disabled>Select an option...</option>
-                                            <option value="project">Project-Based Engagement</option>
-                                            <option value="fractional">Fractional Design Partnership</option>
-                                            <option value="other">Other / Custom</option>
+                                            <option value="project">Full-Time Hiring Inquiry</option>
+                                            <option value="fractional">Advisory / Consulting Opportunity</option>
+                                            <option value="other">Other / General Collaboration</option>
                                         </select>
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-authority-navy/50">
                                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
@@ -167,17 +167,17 @@ export default function StartClient() {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="challenge" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">The Logic Challenge</label>
-                                    <textarea required id="challenge" name="challenge" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400 resize-none" placeholder="Describe the problem, constraints, or goals..."></textarea>
+                                    <label htmlFor="challenge" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Role or Design Challenge Details</label>
+                                    <textarea required id="challenge" name="challenge" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400 resize-none" placeholder="Tell me about your role, team, or project challenge..."></textarea>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="timeline" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Timeline</label>
-                                    <input type="text" id="timeline" name="timeline" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="When do you need to ship?" />
+                                    <label htmlFor="timeline" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Hiring Urgency / Target Start Date</label>
+                                    <input type="text" id="timeline" name="timeline" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Immediate, next month, general pipeline..." />
                                 </div>
 
                                 <button type="submit" disabled={isLoading} className="w-full py-4 bg-electric-cyan text-authority-navy font-bold text-lg rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed">
-                                    {isLoading ? "Submitting..." : "Submit Brief"}
+                                    {isLoading ? "Submitting..." : "Send Message"}
                                     {!isLoading && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
                                 </button>
                             </form>

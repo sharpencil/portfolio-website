@@ -140,7 +140,7 @@ export default function IodineClient() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            How we re-engineered clunky, desktop-locked EMR widgets into an intuitive Material-designed mobile satellite app that maximizes clinician query response rates.
+                            How I re-engineered clunky, desktop-locked EMR widgets into an intuitive Material-designed mobile satellite app that maximizes clinician query response rates.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -175,10 +175,10 @@ export default function IodineClient() {
                             Previously, physicians could only respond to these queries using desktop EMR widgets (Epic/Cerner Compasses) at their workstations. Because hospitalists and private clinicians are constantly on the move, queries remained pending for days, impacting reimbursement rates.
                         </p>
                         <p>
-                            Under Proto UX’s phased approach, we re-architected this process into the **Iodine Interact Mobile App**. Rather than rushing a product out, we designed the mobile workflow over a 14-week cycle, iteratively validating requirements with practicing physicians.
+                            Under my phased approach, I re-architected this process into the **Iodine Interact Mobile App**. Rather than rushing a product out, I designed the mobile workflow over a 14-week cycle, iteratively validating requirements with practicing physicians.
                         </p>
 
-                        <h3 className="text-2xl font-bold text-authority-navy mt-10 mb-4 font-heading">Proto UX Iterative Phasing Model</h3>
+                        <h3 className="text-2xl font-bold text-authority-navy mt-10 mb-4 font-heading">Iterative Phasing Model</h3>
                         <div className="space-y-4 not-prose">
                             {phases.map((ph, idx) => (
                                 <div key={idx} className="p-5 bg-slate-gray border border-slate-200 rounded-xl flex justify-between items-start gap-4 text-xs font-mono">
@@ -455,7 +455,7 @@ export default function IodineClient() {
                     <section className="mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-8 font-heading">The Target User Profiles</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8 max-w-3xl">
-                            We mapped physician needs based on user discoverings, settling on two primary customer segments.
+                            I mapped physician needs based on user discoveries, settling on two primary customer segments.
                         </p>
 
                         {/* Profile slide toggles */}
@@ -573,7 +573,7 @@ export default function IodineClient() {
                     <section className="prose prose-lg max-w-none text-authority-navy/80 font-light leading-relaxed mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-6">Key Design Takeaways</h2>
                         <p>
-                            Through physician and stakeholder discoveries, we isolated several key design axioms that guided the Iodine Interact Mobile architecture:
+                            Through physician and stakeholder discoveries, I isolated several key design axioms that guided the Iodine Interact Mobile architecture:
                         </p>
                         <ul>
                             <li><strong>The Chart Lookup Paradox:</strong> Physicians resist answering queries on mobile if they have to navigate EMR charts. By pulling and embedding geocoded **EMR clinical snippets** directly within the query body, 90% of queries can be answered with a simple single touch.</li>

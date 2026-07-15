@@ -189,7 +189,7 @@ export default function SiemensDFLClient() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            How we translated physical logbooks and disjointed checklists into an iPad-first, social-media-style remote operations workspace for engineers.
+                            How I translated physical logbooks and disjointed checklists into an iPad-first, social-media-style remote operations workspace for engineers.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -609,7 +609,7 @@ export default function SiemensDFLClient() {
 
                         <h3 className="text-2xl font-bold text-authority-navy mt-10 mb-4 font-heading">Remote Diagnostics Binders</h3>
                         <p>
-                            A key finding in the user discoveries was the need to troubleshoot hardware remotely. By including support for geocoded QR scanner codes to inspect machine sheets, and implementing **acoustic waveforms analysis** (listening to equipment room hums to isolate minor bearing misalignments), we designed a workspace where engineers diagnose building issues safely from home.
+                            A key finding in the user discoveries was the need to troubleshoot hardware remotely. By including support for geocoded QR scanner codes to inspect machine sheets, and implementing **acoustic waveforms analysis** (listening to equipment room hums to isolate minor bearing misalignments), I designed a workspace where engineers diagnose building issues safely from home.
                         </p>
                     </section>
 

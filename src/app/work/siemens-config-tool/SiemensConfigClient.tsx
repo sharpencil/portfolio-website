@@ -154,7 +154,7 @@ export default function SiemensConfigClient() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            How we transformed a complex JSON-heavy gateway configuration tool into a standardized, keyboard-friendly workspace with guided commissioning wizards and bulk modifications.
+                            How I transformed a complex JSON-heavy gateway configuration tool into a standardized, keyboard-friendly workspace with guided commissioning wizards and bulk modifications.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -232,7 +232,7 @@ export default function SiemensConfigClient() {
                         </div>
                         <h2 className="text-3xl font-bold font-heading mb-4">Standardized Config Workspace</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8 max-w-3xl">
-                            We standardized the UI to match Siemens' core Enterprise Portal templates using a professional light theme. Navigate the workspace tabs to test commissioning wizards and bulk modifications.
+                            I standardized the UI to match Siemens' core Enterprise Portal templates using a professional light theme. Navigate the workspace tabs to test commissioning wizards and bulk modifications.
                         </p>
 
                         {/* Config Tool Frame (Light Theme style) */}
@@ -654,10 +654,10 @@ export default function SiemensConfigClient() {
                     <section className="prose prose-lg max-w-none text-authority-navy/80 font-light leading-relaxed mb-24">
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-6">Standardizing Building Automation</h2>
                         <p>
-                            Because the Config Tool is an internal workspace used alongside the **Enterprise Portal** and **Operations Tool**, UI standardization was critical. We established consistent styles for input fields, dropdown triggers, and warnings matching the Siemens Core theme.
+                            Because the Config Tool is an internal workspace used alongside the **Enterprise Portal** and **Operations Tool**, UI standardization was critical. I established consistent styles for input fields, dropdown triggers, and warnings matching the Siemens Core theme.
                         </p>
                         <p>
-                            By integrating validation guards directly into the step-by-step wizard forms, we prevented out-of-spec configurations before they reached gateway transmitters. Transitioning obscure, disappearing banners into persistent warning boxes with auto-correction paths significantly cut down support calls and technician error rates.
+                            By integrating validation guards directly into the step-by-step wizard forms, I prevented out-of-spec configurations before they reached gateway transmitters. Transitioning obscure, disappearing banners into persistent warning boxes with auto-correction paths significantly cut down support calls and technician error rates.
                         </p>
                     </section>
 

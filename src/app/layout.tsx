@@ -14,27 +14,27 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://protoux.com"),
+  metadataBase: new URL("https://youngryu.com"),
   title: {
-    default: "Proto UX | Advanced UX/UI Design Consultancy",
-    template: "%s | Proto UX",
+    default: "Young Ryu, Ph.D. | Director of UX & Product Design",
+    template: "%s | Young Ryu, Ph.D.",
   },
-  description: "Advanced UX/UI Design Consultancy specializing in Cognitive Science and System Architecture.",
+  description: "Portfolio of Young Ryu, Ph.D. — Director of UX, Senior UX Architect, and Cognitive Systems Engineer.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Proto UX",
-    description: "Advanced UX/UI Design Consultancy",
-    url: "https://protoux.com",
-    siteName: "Proto UX",
+    title: "Young Ryu, Ph.D. | Director of UX & Product Design",
+    description: "Portfolio of Young Ryu, Ph.D. — Director of UX, Senior UX Architect, and Cognitive Systems Engineer.",
+    url: "https://youngryu.com",
+    siteName: "Young Ryu, Ph.D. Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Proto UX",
-    description: "Advanced UX/UI Design Consultancy",
+    title: "Young Ryu, Ph.D. | Director of UX & Product Design",
+    description: "Portfolio of Young Ryu, Ph.D. — Director of UX, Senior UX Architect, and Cognitive Systems Engineer.",
   },
   robots: {
     index: true,

@@ -6,12 +6,12 @@ import { BrainCircuit, GitBranch, Terminal, Layers } from "lucide-react";
 const solutions = [
     {
         title: "Intent over Interface",
-        description: "We design the Lifecycle of Intent. The interface is secondary to the logic.",
+        description: "I design the Lifecycle of Intent. The interface is secondary to the logic.",
         icon: BrainCircuit
     },
     {
         title: "Logic over Layout",
-        description: "We don't just arrange pixels; we engineer State Machines.",
+        description: "I don't just arrange pixels; I engineer State Machines.",
         icon: GitBranch
     },
     {
@@ -21,7 +21,7 @@ const solutions = [
     },
     {
         title: "Production over Prototype",
-        description: "No handoffs. We deliver Agentic Systems (tokens.json) and Production Code.",
+        description: "No handoffs. I deliver clean system architectures and production-ready code.",
         icon: Layers
     }
 ];
@@ -33,7 +33,7 @@ export default function SolutionSection() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold font-heading text-authority-navy mb-4">
-                            The Proto UX Operating System.
+                            UX Architecture Principles.
                         </h2>
                     </div>
 

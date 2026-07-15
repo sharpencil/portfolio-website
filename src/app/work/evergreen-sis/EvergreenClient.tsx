@@ -147,7 +147,7 @@ export default function EvergreenClient() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            How we designed a clock-hour Student Information System (SIS) that empowers compliance officers, account managers, and executives to navigate federal regulations with care.
+                            How I designed a clock-hour Student Information System (SIS) that empowers compliance officers, account managers, and executives to navigate federal regulations with care.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -178,7 +178,7 @@ export default function EvergreenClient() {
                             This requirement means that student records must be kept in perfect alignment with state clock-hour mandates. Financial aid disbursement (Title IV), billing balances, and graduation audits depend on accurate clock-hour ledgers. 
                         </p>
                         <p>
-                            During collaborative workspace mappings, the Proto UX team identified the need to re-architect EBC's Student Information System (SIS) to center directly around four primary administrative user profiles. By modeling the system around these stakeholders, we translated regulatory compliance into proactive student care.
+                            During collaborative workspace mappings, I identified the need to re-architect EBC's Student Information System (SIS) to center directly around four primary administrative user profiles. By modeling the system around these stakeholders, I translated regulatory compliance into proactive student care.
                         </p>
                     </section>
 

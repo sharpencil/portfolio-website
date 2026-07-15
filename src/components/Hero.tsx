@@ -21,7 +21,7 @@ export default function Hero() {
                     className="bg-white z-10"
                 >
                     <div className="inline-block text-sm font-mono font-bold text-electric-cyan mb-6 tracking-widest uppercase">
-                        EST. 2016 | AUSTIN, TX
+                        Young Ryu, Ph.D. | Austin, TX
                     </div>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-authority-navy leading-[1.1] mb-6">
                         Evidence-based product design.{" "}
@@ -30,7 +30,7 @@ export default function Hero() {
                         </span>
                     </h1>
                     <p className="text-lg md:text-xl text-authority-navy/80 mb-8 max-w-lg font-light leading-relaxed">
-                        We reduce risk, validate decisions, and design scalable Agentic Systems. Adapting continuously as technology evolves.
+                        I reduce risk, validate decisions, and design scalable UX systems bridging cognitive science and code.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">

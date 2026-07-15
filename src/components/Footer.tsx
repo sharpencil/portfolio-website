@@ -14,13 +14,13 @@ export default function Footer() {
                     {/* Column 1: The Brand (4 Cols) */}
                     <div className="md:col-span-4 space-y-6">
                         <Link href="/" className="flex items-center gap-3 group">
-                            <Image src="/images/logo-v2.png" alt="Proto UX Logo" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />
-                            <h2 className="text-3xl font-bold font-heading text-authority-navy tracking-tight">PROTO UX</h2>
+                            <Image src="/images/logo-v2.png" alt="Young Ryu Logo" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />
+                            <h2 className="text-2xl md:text-3xl font-bold font-heading text-authority-navy tracking-tight">Y. RYU, PH.D.</h2>
                         </Link>
-                        <p className="text-sm font-bold uppercase tracking-widest text-authority-navy/60">Logic Architecture Lab.</p>
+                        <p className="text-sm font-bold uppercase tracking-widest text-authority-navy/60">Director of UX & Product Design</p>
                         <div className="pt-6 text-authority-navy/70 text-sm leading-relaxed font-light">
                             <p>Based in Austin, Texas.</p>
-                            <p>Serving the Silicon Hills ecosystem since 2016.</p>
+                            <p>UX Architect & Cognitive Systems Engineer.</p>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-slate-100 bg-white">
                 <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-authority-navy/40">
-                    <p>© 2026 Proto UX. All rights reserved.</p>
+                    <p>© 2026 Young Ryu, Ph.D. All rights reserved.</p>
                     <p className="font-mono">Engineered with Agentic Logic.</p>
                 </div>
             </div>

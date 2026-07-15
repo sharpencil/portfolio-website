@@ -13,7 +13,7 @@ export default function WorkClient() {
             client: "SmartStream",
             tags: ["AI-Driven Flow", "Continuous Flow", "Explainable AI"],
             description:
-                "Translating the AI-Driven Continuous Flow Methodology (AI-CFM) into a high-performance Project Execution Engine. We replaced static backlog boards with a dynamic, real-time pulse timeline forecasting future operations.",
+                "Translating the AI-Driven Continuous Flow Methodology (AI-CFM) into a high-performance Project Execution Engine. I replaced static backlog boards with a dynamic, real-time pulse timeline forecasting future operations.",
             metrics: "Zero-Friction Operations. Predictive Shift Modeling.",
             imageColor: "bg-gradient-to-br from-slate-900 to-authority-navy border-slate-800",
             layout: "left",
@@ -25,7 +25,7 @@ export default function WorkClient() {
             client: "Iodine Software",
             tags: ["Mobile UX/UI", "Material Design", "Healthcare Informatics"],
             description:
-                "Modernizing clinical documentation queries. We designed a touch-optimized mobile interface and push system for physicians, transforming clunky desktop EMR widgets into simple, two-minute response loops.",
+                "Modernizing clinical documentation queries. I designed a touch-optimized mobile interface and push system for physicians, transforming clunky desktop EMR widgets into simple, two-minute response loops.",
             metrics: "Increased Response Rate. Under 2-Minute Actions.",
             imageColor: "bg-gradient-to-br from-[#112D4E] to-slate-950",
             layout: "right",
@@ -37,7 +37,7 @@ export default function WorkClient() {
             client: "TForce Logistics",
             tags: ["Legacy Modernization", "React", "Complex Data"],
             description:
-                "Solving the 'Commingled Route Paradox.' We re-architected a legacy Java Swing logistics system into a modern web platform. By moving from flat lists to Nested Logic Visualization, we reduced cognitive load for dispatchers handling thousands of orders.",
+                "Solving the 'Commingled Route Paradox.' I re-architected a legacy Java Swing logistics system into a modern web platform. By moving from flat lists to Nested Logic Visualization, I reduced cognitive load for dispatchers handling thousands of orders.",
             metrics: "Reduced Dispatch Error Rate. 40% Faster Onboarding.",
             imageColor: "bg-blue-100", // Placeholder for image
             layout: "left",
@@ -49,7 +49,7 @@ export default function WorkClient() {
             client: "Siemens Building Tech",
             tags: ["Remote Diagnostics", "Social UI Style", "Touchscreen Design"],
             description:
-                "Translating physical facility logbooks into a dynamic building operations portal. We designed a touch-first, iPad-proportioned collaboration hub featuring real-time activity streams, QR code asset lookups, and remote acoustic diagnostics.",
+                "Translating physical facility logbooks into a dynamic building operations portal. I designed a touch-first, iPad-proportioned collaboration hub featuring real-time activity streams, QR code asset lookups, and remote acoustic diagnostics.",
             metrics: "Remote Collaboration. Sound-Based Diagnostics.",
             imageColor: "bg-gradient-to-br from-[#003C43] to-slate-950",
             layout: "right",
@@ -61,7 +61,7 @@ export default function WorkClient() {
             client: "Evergreen Beauty College",
             tags: ["Clock-Hour Tracking", "Regulatory Compliance", "Role Impersonation"],
             description:
-                "Modernizing educational administration for clock-hour institutions. We re-engineered the student account management workflow, enabling compliance tracking, predictive risk monitoring, and seamless role impersonation to streamline audits.",
+                "Modernizing educational administration for clock-hour institutions. I re-engineered the student account management workflow, enabling compliance tracking, predictive risk monitoring, and seamless role impersonation to streamline audits.",
             metrics: "Automated Financial Aid. Instant Clock-Hour Auditing.",
             imageColor: "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
             layout: "left",
@@ -73,7 +73,7 @@ export default function WorkClient() {
             client: "Siemens Config Tool",
             tags: ["Bulk Configuration", "Standardized UI", "Wizard Workflow"],
             description:
-                "Simplifying complex gateway commissioning. We re-designed the engineering configuration workspace, replacing technical JSON interfaces with guided setup wizards, persistent validation rules, and bulk deployment frameworks.",
+                "Simplifying complex gateway commissioning. I re-designed the engineering configuration workspace, replacing technical JSON interfaces with guided setup wizards, persistent validation rules, and bulk deployment frameworks.",
             metrics: "Zero JSON Errors. 3x Faster Site Commissioning.",
             imageColor: "bg-gradient-to-br from-[#1F4E5B] to-slate-900",
             layout: "right",
@@ -98,7 +98,7 @@ export default function WorkClient() {
                     </h1>
                     <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-2xl mx-auto leading-relaxed mb-6">
                         Selected case studies in Agentic Design and System Architecture. <br className="hidden md:block" />
-                        We don't just visualize; <span className="font-semibold text-authority-navy underline decoration-electric-cyan underline-offset-4">we execute.</span>
+                        I don't just visualize; <span className="font-semibold text-authority-navy underline decoration-electric-cyan underline-offset-4">I execute.</span>
                     </p>
                     <div className="max-w-xl mx-auto p-4 bg-slate-gray rounded-xl border border-slate-200 text-xs font-light text-authority-navy/80 leading-relaxed text-center">
                         <strong>Confidentiality Notice:</strong> All client deliverables listed below are subject to strict NDAs. Interactive widgets are sanitized, functional wireframe simulations. High-fidelity designs are available for review upon request.
@@ -172,7 +172,7 @@ export default function WorkClient() {
                 <div className="container mx-auto px-6 max-w-4xl">
                     <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">Have a complex problem?</h2>
                     <p className="text-xl md:text-2xl text-white/70 mb-10 font-light">
-                        We specialize in the projects other agencies turn down.
+                        I specialize in complex product ecosystems that other designers turn down.
                     </p>
                     <Link
                         href="/start"

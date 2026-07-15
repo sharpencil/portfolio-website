@@ -7,9 +7,9 @@ export default function EngagementCriteria() {
         <section className="py-24 bg-authority-navy text-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">Compatibility Check</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">Collaboration Style</h2>
                     <p className="text-xl text-white/70 font-light max-w-2xl mx-auto">
-                        We are not a generalist agency. We are a specialized Logic Lab.
+                        I am not a generalist designer. I lead complex UX Architectures, bridging human factors and code.
                     </p>
                 </div>
 
@@ -18,7 +18,7 @@ export default function EngagementCriteria() {
                     {/* Left Column: Compatible */}
                     <div className="p-10 md:p-12 bg-white/5 backdrop-blur-sm border-r border-white/10">
                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
-                            Proto UX is for:
+                            Where I add the most value:
                         </h3>
                         <p className="text-white/50 text-sm uppercase tracking-widest mb-8">Green Flags</p>
 
@@ -40,7 +40,7 @@ export default function EngagementCriteria() {
                     {/* Right Column: Conflicts */}
                     <div className="p-10 md:p-12 bg-white/5 backdrop-blur-sm">
                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
-                            We are not for:
+                            Where my approach conflicts:
                         </h3>
                         <p className="text-white/50 text-sm uppercase tracking-widest mb-8">System Conflicts</p>
 

@@ -20,9 +20,9 @@ export default function Navbar() {
             className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm"
         >
             <div className="flex items-center">
-                <Link href="/" className="flex items-center gap-3 text-2xl font-bold text-authority-navy tracking-tight font-heading">
-                    <Image src="/images/logo-v2.png" alt="Proto UX Logo" width={32} height={32} />
-                    PROTO UX
+                <Link href="/" className="flex items-center gap-3 text-xl md:text-2xl font-bold text-authority-navy tracking-tight font-heading">
+                    <Image src="/images/logo-v2.png" alt="Young Ryu Logo" width={32} height={32} />
+                    YOUNG RYU, Ph.D.
                 </Link>
             </div>
 

@@ -6,7 +6,7 @@ import { AlertTriangle, ShieldAlert, Cpu, Activity } from "lucide-react";
 const problems = [
     {
         title: "Probabilistic Hallucination",
-        description: "AI guesses user intent based on averages. We use Human Factors rigor to map specific intent.",
+        description: "AI guesses user intent based on averages. I use Human Factors rigor to map specific intent.",
         icon: AlertTriangle
     },
     {
@@ -16,12 +16,12 @@ const problems = [
     },
     {
         title: "The Happy Path Illusion",
-        description: "AI ignores complex error states. We architect the recovery loops.",
+        description: "AI ignores complex error states. I architect the error recovery loops.",
         icon: Activity
     },
     {
         title: "Architecture-Blind Code",
-        description: "AI writes code that breaks later. We architect the Data Schema first.",
+        description: "AI writes code that breaks later. I architect the Data Schema first.",
         icon: ShieldAlert
     }
 ];

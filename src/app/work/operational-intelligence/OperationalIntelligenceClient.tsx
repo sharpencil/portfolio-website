@@ -147,7 +147,7 @@ export default function CaseStudyOperationalIntelligence() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light leading-relaxed mb-12 border-l-4 border-electric-cyan pl-6 max-w-3xl">
-                            How we re-architected the legacy desktop Dispatch & Execution Control System (DECS) into a fast, web-based workspace focused on high-value Order Review.
+                            How I re-architected the legacy desktop Dispatch & Execution Control System (DECS) into a fast, web-based workspace focused on high-value Order Review.
                         </p>
                         <NDABanner theme="light" className="mb-12" />
                     </motion.div>
@@ -230,7 +230,7 @@ export default function CaseStudyOperationalIntelligence() {
                         </div>
                         <h2 className="text-3xl font-bold font-heading text-authority-navy mb-4">The DECS Workspace Sandbox</h2>
                         <p className="text-lg text-authority-navy/70 font-light mb-8 max-w-3xl">
-                            We engineered a highly responsive browser layout taking cues from Xcelerator and VSCode. Switch search tabs, customize columns, validate addresses, and review SharePoint approvals in real-time.
+                            I engineered a highly responsive browser layout taking cues from Xcelerator and VSCode. Switch search tabs, customize columns, validate addresses, and review SharePoint approvals in real-time.
                         </p>
 
                         {/* Browser Sandbox UI Container */}
