@@ -94,11 +94,11 @@ export default function WorkClient() {
                     className="max-w-4xl mx-auto"
                 >
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-authority-navy mb-6">
-                        Shipped Logic.
+                        Selected Work.
                     </h1>
-                    <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-2xl mx-auto leading-relaxed mb-6">
-                        Selected case studies in Agentic Design and System Architecture. <br className="hidden md:block" />
-                        I don't just visualize; <span className="font-semibold text-authority-navy underline decoration-electric-cyan underline-offset-4">I execute.</span>
+                    <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-3xl mx-auto leading-relaxed mb-6">
+                        Case studies in UX architecture, complex software ecosystems, and design strategy. <br className="hidden md:block" />
+                        Focusing on evidence-based systems design and collaborative execution at scale.
                     </p>
                     <div className="max-w-xl mx-auto p-4 bg-slate-gray rounded-xl border border-slate-200 text-xs font-light text-authority-navy/80 leading-relaxed text-center">
                         <strong>Confidentiality Notice:</strong> All client deliverables listed below are subject to strict NDAs. Interactive widgets are sanitized, functional wireframe simulations. High-fidelity designs are available for review upon request.
