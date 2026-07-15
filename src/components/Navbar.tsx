@@ -21,7 +21,7 @@ export default function Navbar() {
         >
             <div className="flex items-center">
                 <Link href="/" className="flex items-center gap-3 text-xl md:text-2xl font-bold text-authority-navy tracking-tight font-heading">
-                    <Image src="/images/logo-v2.png" alt="Young Ryu Logo" width={32} height={32} />
+                    <Image src="/images/logo.png" alt="Young Ryu Logo" width={32} height={32} />
                     Young Ryu, Ph.D.
                 </Link>
             </div>
