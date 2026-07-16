@@ -3,41 +3,30 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
-import { Mail, MapPin, CheckCircle2, ArrowRight, CheckCircle } from "lucide-react";
+import { 
+    Mail, 
+    MapPin, 
+    CheckCircle2, 
+    ArrowRight, 
+    Copy, 
+    Check, 
+    FileText, 
+    Calendar, 
+    Clock, 
+    ExternalLink 
+} from "lucide-react";
 
 export default function StartClient() {
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+    const [copied, setCopied] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsLoading(true);
-
-        const myForm = e.currentTarget;
-        const formData = new FormData(myForm);
-        const data = new URLSearchParams();
-
-        // 1. Manually add the form-name so Netlify knows which form this is
-        data.append("form-name", "start-form");
-
-        // 2. Append all other fields
-        for (const pair of formData.entries()) {
-            data.append(pair[0], pair[1] as string);
-        }
-
-        // 3. Post to the static HTML file we created
-        fetch("/__forms.html", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: data.toString(),
-        })
-            .then(() => setIsSubmitted(true))
-            .catch((error) => alert(error))
-            .finally(() => setIsLoading(false));
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText("sharpencil@gmail.com");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
     };
 
     return (
-        <main className="min-h-screen bg-slate-gray selection:bg-electric-cyan selection:text-authority-navy font-sans">
+        <main className="min-h-screen bg-slate-gray selection:bg-electric-cyan selection:text-authority-navy font-sans text-authority-navy">
             <Navbar />
 
             <div className="container mx-auto px-6 py-32 lg:py-48 min-h-screen flex items-center justify-center">
@@ -65,7 +54,7 @@ export default function StartClient() {
                             Let's Connect.
                         </h1>
                         <p className="text-xl md:text-2xl text-authority-navy/80 font-light mb-12 leading-relaxed">
-                            Ready to collaborate? Reach out about open roles, consulting needs, or design challenges.
+                            I am seeking in-house design leadership roles. Let's discuss organizational needs, leadership opportunities, or technical design systems challenges.
                         </p>
 
                         <div className="space-y-8 border-t border-authority-navy/10 pt-8">
@@ -86,104 +75,114 @@ export default function StartClient() {
                             </div>
                         </div>
 
-                        <div className="mt-12 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                            <h3 className="text-lg font-bold font-heading text-authority-navy mb-4">Next Steps</h3>
-                            <ul className="space-y-3">
-                                {["Email response within 24 hours", "Introductory conversation", "Technical design alignment"].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3 text-authority-navy/80">
-                                        <CheckCircle2 className="w-5 h-5 text-electric-cyan" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                        {/* Credentials Card */}
+                        <div className="mt-12 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col sm:flex-row gap-4 items-center justify-between">
+                            <div>
+                                <h3 className="text-lg font-bold font-heading text-authority-navy">Curriculum Vitae</h3>
+                                <p className="text-sm text-authority-navy/60 font-light mt-0.5">Download my latest professional resume (PDF).</p>
+                            </div>
+                            <a 
+                                href="/resume.pdf" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-all shrink-0"
+                            >
+                                <FileText className="w-4 h-4" />
+                                Download Resume
+                            </a>
                         </div>
                     </motion.div>
 
-                    {/* Right Column: Intake Form Card */}
+                    {/* Right Column: Interaction Hub */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                        className="bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-slate-200/50 border border-white"
+                        className="bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-slate-200/50 border border-white space-y-8 text-left"
                     >
-                        {isSubmitted ? (
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                className="text-center py-24"
-                            >
-                                <div className="w-20 h-20 bg-electric-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <CheckCircle className="w-10 h-10 text-electric-cyan" />
+                        <div>
+                            <h2 className="text-2xl font-bold font-heading text-authority-navy mb-2">Schedule a Conversation</h2>
+                            <p className="text-sm text-authority-navy/70 font-light">
+                                Select an agenda format below to schedule an introductory conversation or coordinate calendar links.
+                            </p>
+                        </div>
+
+                        {/* Booking Options Cards */}
+                        <div className="space-y-4">
+                            <div className="p-5 border border-slate-200 rounded-2xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-start gap-4">
+                                <div className="mt-1 p-2 bg-electric-cyan/15 rounded-xl text-authority-navy">
+                                    <Clock className="w-5 h-5 text-authority-navy" />
                                 </div>
-                                <h3 className="text-3xl font-bold font-heading text-authority-navy mb-4">Message Sent.</h3>
-                                <p className="text-authority-navy/70 text-lg max-w-md mx-auto mb-8">
-                                    Your message has been received. I will review your inquiry and respond shortly.
-                                </p>
-                                <button
-                                    onClick={() => window.location.href = '/'}
-                                    className="px-8 py-3 border-2 border-authority-navy text-authority-navy font-bold rounded-lg hover:bg-authority-navy hover:text-white transition-colors"
+                                <div className="flex-1">
+                                    <div className="flex justify-between items-start">
+                                        <span className="font-bold text-sm">15-Min Introductory Sync</span>
+                                        <span className="text-[10px] font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">15 MIN</span>
+                                    </div>
+                                    <p className="text-xs text-authority-navy/60 font-light mt-1.5 leading-relaxed">
+                                        Brief meeting to align on candidates-to-role fit, team structures, design methodologies, and program timelines.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="p-5 border border-slate-200 rounded-2xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-start gap-4">
+                                <div className="mt-1 p-2 bg-electric-cyan/15 rounded-xl text-authority-navy">
+                                    <Calendar className="w-5 h-5 text-authority-navy" />
+                                </div>
+                                <div className="flex-1">
+                                    <div className="flex justify-between items-start">
+                                        <span className="font-bold text-sm">30-Min Portfolio Walkthrough</span>
+                                        <span className="text-[10px] font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">30 MIN</span>
+                                    </div>
+                                    <p className="text-xs text-authority-navy/60 font-light mt-1.5 leading-relaxed">
+                                        Deep dive into case study logic, systems engineering principles, design systems governance, and leadership frameworks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Interactive Buttons */}
+                        <div className="space-y-4 pt-4 border-t border-slate-100">
+                            {/* Email Action */}
+                            <a 
+                                href="mailto:sharpencil@gmail.com?subject=Inquiry from Portfolio Website&body=Hi Young,%0D%0A%0D%0AI would like to coordinate a time to sync. Below are details about the opportunity:%0D%0A%0D%0A- Company:%0D%0A- Role / Focus:%0D%0A- Best times for a calendar invite:"
+                                className="w-full py-4 bg-electric-cyan text-authority-navy font-bold text-base rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 group"
+                            >
+                                <Mail className="w-5 h-5" />
+                                Request Meeting via Email
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </a>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {/* Copy Email address */}
+                                <button 
+                                    onClick={handleCopyEmail}
+                                    className="py-3.5 border-2 border-slate-200 hover:border-slate-300 text-authority-navy text-xs font-bold rounded-xl flex items-center justify-center gap-2 transition-colors bg-white"
                                 >
-                                    Return to HQ
+                                    {copied ? (
+                                        <>
+                                            <Check className="w-4 h-4 text-emerald-500" />
+                                            <span>Email Copied!</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Copy className="w-4 h-4 text-slate-500" />
+                                            <span>Copy Email Address</span>
+                                        </>
+                                    )}
                                 </button>
-                            </motion.div>
-                        ) : (
-                            <form
-                                data-netlify="true"
-                                name="start-form"
-                                method="POST"
-                                className="space-y-8"
-                                onSubmit={handleSubmit}
-                            >
-                                <input type="hidden" name="form-name" value="start-form" />
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="space-y-2">
-                                        <label htmlFor="name" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Name</label>
-                                        <input required type="text" id="name" name="name" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Jane Doe" />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label htmlFor="email" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Email Address</label>
-                                        <input required type="email" id="email" name="email" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="jane@company.com" />
-                                    </div>
-                                </div>
 
-                                <div className="space-y-2">
-                                    <label htmlFor="org" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Organization / Company</label>
-                                    <input required type="text" id="org" name="org" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Acme Corp" />
-                                </div>
-
-                                <div className="space-y-2">
-                                    <label htmlFor="model" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Inquiry Type</label>
-                                    <div className="relative">
-                                        <select id="model" name="model" defaultValue="" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
-                                            <option value="" disabled>Select an option...</option>
-                                            <option value="full-time">Full-Time Permanent Role (W2)</option>
-                                            <option value="contract">Contract / Consulting Opportunity (1099/W2)</option>
-                                            <option value="part-time">Part-Time / Fractional Leadership</option>
-                                            <option value="interview">Advisory / Interview Invitation</option>
-                                            <option value="networking">General Networking / Collaboration</option>
-                                        </select>
-                                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-authority-navy/50">
-                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <label htmlFor="challenge" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Role or Design Challenge Details</label>
-                                    <textarea required id="challenge" name="challenge" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400 resize-none" placeholder="Tell me about your role, team, or project challenge..."></textarea>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <label htmlFor="timeline" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Hiring Urgency / Target Start Date</label>
-                                    <input type="text" id="timeline" name="timeline" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy placeholder:text-slate-400" placeholder="Immediate, next month, general pipeline..." />
-                                </div>
-
-                                <button type="submit" disabled={isLoading} className="w-full py-4 bg-electric-cyan text-authority-navy font-bold text-lg rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed">
-                                    {isLoading ? "Submitting..." : "Send Message"}
-                                    {!isLoading && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
-                                </button>
-                            </form>
-                        )}
+                                {/* LinkedIn Profile */}
+                                <a 
+                                    href="https://linkedin.com/in/youngryu" // Replace with actual profile if different
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="py-3.5 border-2 border-slate-200 hover:border-slate-300 text-authority-navy text-xs font-bold rounded-xl flex items-center justify-center gap-2 transition-colors bg-white"
+                                >
+                                    <ExternalLink className="w-4 h-4 text-slate-500" />
+                                    LinkedIn Profile
+                                </a>
+                            </div>
+                        </div>
                     </motion.div>
 
                 </div>
