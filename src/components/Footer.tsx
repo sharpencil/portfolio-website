@@ -31,6 +31,7 @@ export default function Footer() {
                             {[
                                 { name: "Capabilities", href: "/capabilities" },
                                 { name: "Work", href: "/work" },
+                                { name: "Resume", href: "/resume" },
                                 { name: "About", href: "/about" },
                             ].map((link) => (
                                 <li key={link.name}>

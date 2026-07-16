@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/capabilities',
+    '/resume',
     '/start',
     '/work',
     '/work/smartstream',
