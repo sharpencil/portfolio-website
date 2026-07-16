@@ -156,9 +156,11 @@ export default function StartClient() {
                                     <div className="relative">
                                         <select id="model" name="model" defaultValue="" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
                                             <option value="" disabled>Select an option...</option>
-                                            <option value="project">Full-Time Hiring Inquiry</option>
-                                            <option value="fractional">Advisory / Consulting Opportunity</option>
-                                            <option value="other">Other / General Collaboration</option>
+                                            <option value="full-time">Full-Time Permanent Role (W2)</option>
+                                            <option value="contract">Contract / Consulting Opportunity (1099/W2)</option>
+                                            <option value="part-time">Part-Time / Fractional Leadership</option>
+                                            <option value="interview">Advisory / Interview Invitation</option>
+                                            <option value="networking">General Networking / Collaboration</option>
                                         </select>
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-authority-navy/50">
                                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
